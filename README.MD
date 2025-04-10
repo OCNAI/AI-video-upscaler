@@ -1,4 +1,4 @@
-### AI Video Upscaler
+# AI Video Upscaler
 
 The AI Video Upscaler is a Python-based local video upscaling solution leveraging state-of-the-art AI image upscaling algorithms. 
 This project splits videos into individual frames, enhances each frame using AI image enhancement techniques, and recombines the frames into a high-quality upscaled video, entirely on your local machine.
