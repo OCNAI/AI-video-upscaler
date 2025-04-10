@@ -8,12 +8,13 @@ This project splits videos into individual frames, enhances each frame using AI 
 * __Local AI-based video upscaling:__ No reliance on cloud services or paid APIs.
 * __High-quality frame interpolation:__ Uses Python and FFMPEG for lossless video-to-frame and frame-to-video conversions.
 * __Simple CLI:__ Easy-to-use command line interface for quick video processing.
+* __Auto model downloading:__ Automatically downloads 2x and 4x models if not already present.
 
 ## Installation:
 ### Prerequisites:
 Ensure the following software is installed and available in your system PATH:
 * Python 3.10 or later
-* [FFMPEG](https://www.ffmpeg.org/)
+* [FFMPEG](https://www.gyan.dev/ffmpeg/builds/) 
 
 ### Setup
 
@@ -45,7 +46,9 @@ python upscale_video.py --input input_videos/your_video.mp4 --output output_vide
 
 --scale: Upscaling factor (default is 2 for 2x upscale).
 
---model: Choose a specific model (default is RealESRGAN_x4plus).
+--model: Choose a specific model (default is RealESRGAN_x2plus).
+
+--legacy: Use disk-based frame processing instead of fast in-memory stream (slower).
 
 ## Recommended hardware specs:
 To efficiently use this software, we recommend the following specifications:
@@ -80,6 +83,8 @@ ai-video-upscaler/
 ├── venv/                    # Python virtual environment
 
 ├── upscale_video.py         # Main Python script
+
+├── compat.py                # Simple script to fix some imports
 
 ├── requirements.txt         # Project dependencies
 
