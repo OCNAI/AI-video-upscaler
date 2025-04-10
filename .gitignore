@@ -1,0 +1,19 @@
+# Ignore Python virtual environment
+venv/
+
+# Ignore contents of input and output folders, but not the folders themselves
+input_videos/*
+!input_videos/.gitkeep
+
+output_videos/*
+!output_videos/.gitkeep
+
+frames/input/*
+!frames/input/.gitkeep
+
+frames/output/*
+!frames/output/.gitkeep
+
+# General ignores
+__pycache__/
+*.pyc
