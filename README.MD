@@ -38,10 +38,13 @@ Ensure the following software is installed and available in your system PATH:
 
 1. Place the video you wish to upscale into the input_videos/ folder.
 2. Run the upscale script:
+
 python upscale_video.py --input input_videos/your_video.mp4 --output output_videos/upscaled_video.mp4
 
 ### Optional arguments:
+
 --scale: Upscaling factor (default is 2 for 2x upscale).
+
 --model: Choose a specific model (default is RealESRGAN_x4plus).
 
 ## Recommended hardware specs:
@@ -61,16 +64,27 @@ To efficiently use this software, we recommend the following specifications:
 
 ## Repository structure explained:
 ai-video-upscaler/
+
 ├── input_videos/            # Folder for input videos
+
 ├── output_videos/           # Folder for output upscaled videos
+
 ├── frames/                  # Temporary folder for extracted frames
+
 │   ├── input/
+
 │   └── output/
+
 ├── models/                  # Folder for AI models
+
 ├── venv/                    # Python virtual environment
+
 ├── upscale_video.py         # Main Python script
+
 ├── requirements.txt         # Project dependencies
+
 ├── .gitignore               
+
 └── README.md
 
 ## License:
