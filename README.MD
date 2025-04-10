@@ -18,15 +18,18 @@ Ensure the following software is installed and available in your system PATH:
 ### Setup
 
 1. Clone the repository:
+
 git clone https://github.com/YourUsername/ai-video-upscaler.git
 cd ai-video-upscaler
 
 2. Create a virtual environment and activate it:
+
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 .\venv\Scripts\activate  # Windows
 
 3. Install dependencies:
+
 pip install -r requirements.txt
 
 ## Usage: 
