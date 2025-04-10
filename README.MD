@@ -10,12 +10,12 @@ This project splits videos into individual frames, enhances each frame using AI 
 * __Simple CLI:__ Easy-to-use command line interface for quick video processing.
 
 ## Installation:
-# Prerequisites:
+### Prerequisites:
 Ensure the following software is installed and available in your system PATH:
 * Python 3.10 or later
 * [FFMPEG](https://www.ffmpeg.org/)
 
-# Setup
+### Setup
 
 1. Clone the repository:
 git clone https://github.com/YourUsername/ai-video-upscaler.git
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 2. Run the upscale script:
 python upscale_video.py --input input_videos/your_video.mp4 --output output_videos/upscaled_video.mp4
 
-# Optional arguments:
+### Optional arguments:
 --scale: Upscaling factor (default is 2 for 2x upscale).
 --model: Choose a specific model (default is RealESRGAN_x4plus).
 
